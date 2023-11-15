@@ -1,13 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: ruby-http-server-app
+  name: smart-server-app
   namespace: argocd
 spec:
   project: default
 
   source:
-    repoURL: https://github.com/denisgdevops/ruby-http-server-app.git  # Replace with your GitLab repo URL
+    repoURL: https://github.com/denisgcloud/smart-server-app.git  # Replace with your GitLab repo URL
     targetRevision: HEAD
     path: platform/helm # Path to your application's Kubernetes manifests
   destination:
